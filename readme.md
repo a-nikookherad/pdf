@@ -1,8 +1,10 @@
 # PDF srevice
 
-***this service for convert html file to pdf file***
+***This service use for convert html to pdf***
 
-for initialize this service make sure you set environment's variables
+This service needs athena pdf service(https://github.com/arachnys/athenapdf)
+
+For initialize this service make sure you set environment's variables
 
 ```yaml
 PDF_SERVICE_URL=172.19.0.5:8080
