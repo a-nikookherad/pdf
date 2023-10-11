@@ -22,7 +22,6 @@
             "PDF\\": "./src"
         }
     },
-    "config": ,
     "keywords": [
         "pdf"
     ],
