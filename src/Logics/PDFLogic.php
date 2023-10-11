@@ -27,6 +27,13 @@ class PDFLogic implements PDFLogicInterface
         return $this;
     }
 
+    public function setConfig(?array $config): self
+    {
+        $this->clientConfig = array_merge($config, $this->clientConfig);
+
+        return $this;
+    }
+
     public function render()
     {
         $this->setConfig([
@@ -81,13 +88,6 @@ class PDFLogic implements PDFLogicInterface
             \Log::error($e->getMessage());
             throw($e);
         }
-    }
-
-    public function setConfig(?array $config): self
-    {
-        $this->clientConfig = array_merge($config, $this->clientConfig);
-
-        return $this;
     }
 
     private function getHtmlAsResource()
